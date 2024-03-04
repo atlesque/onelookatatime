@@ -1,6 +1,6 @@
 # One Look At A Time
 
-Look book app for viewing photos made for an art project in Ghent, Belgium.
+Look book app for viewing photos made for the art exhibition "Post-Fossiel Gent" (May 2018).
 
 ## Requirements
 
