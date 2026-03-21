@@ -2,6 +2,7 @@
 import { getLookByNumber, getWrappedLookNumber } from '../../data/looks'
 
 const route = useRoute()
+const router = useRouter()
 const { language, alternateLanguage, toggleLanguage } = useLanguage()
 
 const routeId = Array.isArray(route.params.id) ? route.params.id[0] : route.params.id
@@ -15,13 +16,33 @@ if (!look) {
   })
 }
 
-const previousLookHref = `/look/${getWrappedLookNumber(look.number - 1)}`
-const nextLookHref = `/look/${getWrappedLookNumber(look.number + 1)}`
-const selectedDetailId = ref(null)
+const selectedDetailId = computed(() => {
+  const detailId = Array.isArray(route.query.detail) ? route.query.detail[0] : route.query.detail
+
+  if (typeof detailId !== 'string') {
+    return null
+  }
+
+  return look.details.some((detail) => detail.id === detailId) ? detailId : null
+})
+
+const previousLookHref = computed(() => ({
+  path: `/look/${getWrappedLookNumber(look.number - 1)}`,
+  query: route.query
+}))
+
+const nextLookHref = computed(() => ({
+  path: `/look/${getWrappedLookNumber(look.number + 1)}`,
+  query: route.query
+}))
 
 const selectedDetail = computed(
   () => look.details.find((detail) => detail.id === selectedDetailId.value) ?? null
 )
+
+const previewDetailId = ref(null)
+
+const activeDetailId = computed(() => previewDetailId.value ?? selectedDetailId.value)
 
 const selectedDetailIndex = computed(() =>
   selectedDetail.value
@@ -29,12 +50,32 @@ const selectedDetailIndex = computed(() =>
     : -1
 )
 
+function updateDetailQuery(detailId) {
+  const nextQuery = { ...route.query }
+
+  if (detailId) {
+    nextQuery.detail = detailId
+  }
+  else {
+    delete nextQuery.detail
+  }
+
+  router.replace({
+    query: nextQuery
+  })
+}
+
 function openDetail(detailId) {
-  selectedDetailId.value = detailId
+  updateDetailQuery(detailId)
 }
 
 function closeDetail() {
-  selectedDetailId.value = null
+  previewDetailId.value = null
+  updateDetailQuery(null)
+}
+
+function previewDetail(detailId) {
+  previewDetailId.value = detailId
 }
 
 function openRelativeDetail(offset) {
@@ -46,7 +87,7 @@ function openRelativeDetail(offset) {
   const totalDetails = look.details.length
   const nextIndex = (currentIndex + offset + totalDetails) % totalDetails
 
-  selectedDetailId.value = look.details[nextIndex].id
+  updateDetailQuery(look.details[nextIndex].id)
 }
 
 function handleKeydown(event) {
@@ -88,17 +129,27 @@ onBeforeUnmount(() => {
     <SiteHeader :prev-href="previousLookHref" :next-href="nextLookHref" />
 
     <main class="look-page">
-      <LookStage :look="look" :selected-detail-id="selectedDetailId" @select="openDetail" />
+      <LookStage
+        :look="look"
+        :language="language"
+        :selected-detail-id="activeDetailId"
+        @select="openDetail"
+        @hover="previewDetail"
+      />
 
       <div class="look-page__details">
         <button
           v-for="detail in look.details"
           :key="detail.id"
+          :class="['look-page__detail-chip', { 'look-page__detail-chip--active': activeDetailId === detail.id }]"
           type="button"
-          class="look-page__detail-chip"
           @click="openDetail(detail.id)"
+          @mouseenter="previewDetail(detail.id)"
+          @mouseleave="previewDetail(null)"
+          @focus="previewDetail(detail.id)"
+          @blur="previewDetail(null)"
         >
-          {{ detail.title }}
+          {{ detail.title[language] }}
         </button>
       </div>
     </main>

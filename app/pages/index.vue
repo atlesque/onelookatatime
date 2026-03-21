@@ -32,21 +32,23 @@ useSeoMeta({
           </p>
 
           <p class="intro__tagline">ONE LOOK AT A TIME</p>
-          <p class="intro__prompt">
-            {{ language === 'nl' ? 'Klik om meer te ontdekken:' : 'Click to discover more:' }}
-          </p>
         </div>
+
+        <p class="intro__prompt">
+          {{ language === 'nl' ? 'Klik om meer te ontdekken:' : 'Click to discover more:' }}
+        </p>
       </section>
 
       <section class="gallery" aria-label="Looks gallery">
-        <NuxtLink
+        <div
           v-for="look in looks"
           :key="look.number"
-          :to="`/look/${look.number}`"
           class="gallery__item"
         >
-          <img :src="look.cover" :alt="`Look ${look.number}`" class="gallery__image">
-        </NuxtLink>
+          <NuxtLink :to="`/look/${look.number}`" class="gallery__link">
+            <img :src="look.cover" :alt="`Look ${look.number}`" class="gallery__image">
+          </NuxtLink>
+        </div>
       </section>
     </main>
 

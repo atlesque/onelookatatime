@@ -1,11 +1,11 @@
 <script setup>
 defineProps({
   prevHref: {
-    type: String,
+    type: [String, Object],
     default: undefined
   },
   nextHref: {
-    type: String,
+    type: [String, Object],
     default: undefined
   }
 })

@@ -4,6 +4,10 @@ export default defineNuxtConfig({
   modules: ['@nuxt/eslint'],
   css: ['~/assets/css/main.css'],
   app: {
+    pageTransition: {
+      name: 'page-fade',
+      mode: 'out-in'
+    },
     head: {
       htmlAttrs: {
         lang: 'en'

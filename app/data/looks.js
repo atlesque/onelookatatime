@@ -27,7 +27,10 @@ export const looks = [
     details: [
       {
         id: 'glasses',
-        title: 'Smart Glasses',
+        title: {
+          nl: 'Slimme Bril',
+          eng: 'Smart Glasses'
+        },
         image: '/img/details/remy-white-full/glasses.jpg',
         description: {
           nl: 'Smart Glasses beschermen niet alleen tegen de zon, maar bieden ook ingebouwde GPS-navigatie, live weersvoorspellingen, videoconferencing on-the-go en ondersteund leren via Augmented Reality.',
@@ -36,7 +39,10 @@ export const looks = [
       },
       {
         id: 'photovoltaic-membrane',
-        title: 'Super Charge Photovoltaic Membrane',
+        title: {
+          nl: 'Super Charge Fotovoltaisch Membraan',
+          eng: 'Super Charge Photovoltaic Membrane'
+        },
         image: '/img/details/remy-white-full/photovoltaic-membrane.jpg',
         description: {
           nl: 'Het Super Charge fotovoltaische membraan vangt het beschikbare zonlicht op en zet dit om in bruikbare energie. Net als hun grotere broer, het zonnepaneel, helpen deze je smartphone en powerbank te laden.',
@@ -45,7 +51,10 @@ export const looks = [
       },
       {
         id: 'adaptive-clothing',
-        title: 'Weather Adaptive Clothing',
+        title: {
+          nl: 'Weeradaptieve Kleding',
+          eng: 'Weather Adaptive Clothing'
+        },
         image: '/img/details/remy-white-full/adaptive-clothing.jpg',
         description: {
           nl: 'Weer Adaptieve kleding verandert van kleur afhankelijk van de weersomstandigheden. Wanneer het zonnig is, wordt de stof lichter, reflecteert het grootste deel van de zon en houdt het lichaam koel.',
@@ -54,7 +63,10 @@ export const looks = [
       },
       {
         id: 'pockets',
-        title: 'Powerbank Pockets',
+        title: {
+          nl: 'Powerbank-Zakken',
+          eng: 'Powerbank Pockets'
+        },
         image: '/img/details/remy-white-full/pockets.jpg',
         description: {
           nl: 'Met grote zakken kan de drager een extra powerbank meenemen of meer mobiele apparaten opladen met het fotovoltaische membraan.',
@@ -98,7 +110,10 @@ export const looks = [
     details: [
       {
         id: 'glasses',
-        title: 'Smart Surveillance Glasses',
+        title: {
+          nl: 'Slimme Toezichtbril',
+          eng: 'Smart Surveillance Glasses'
+        },
         image: '/img/details/julia-white-full/glasses.jpg',
         description: {
           nl: 'De Smart Surveillance-bril laat mensen en androïden hun huis, kinderen en omgeving bewaken. Ze verbeteren de veiligheid door de gebruiker op het juiste moment te waarschuwen. bijv. Wanneer de kinderen te ver zijn afgedwaald, of een onbekende persoon het huis is binnengegaan. Ze zijn ontworpen om onopvallend te zijn, doch altijd klaar om te helpen.',
@@ -107,7 +122,10 @@ export const looks = [
       },
       {
         id: 'bracelet',
-        title: 'Tracker',
+        title: {
+          nl: 'Tracker',
+          eng: 'Tracker'
+        },
         image: '/img/details/julia-white-full/bracelet.jpg',
         description: {
           nl: 'Een Tracker-armband deelt de locatie van de drager met gekozen familie en vrienden. Het kan een SOS-signaal uitzenden, geactiveerd door de drager of tijdens een verkeersongeval of een val. De armband laadt zichzelf op met behulp van de kinetische energie die wordt gemaakt door handbewegingen.',
@@ -116,7 +134,10 @@ export const looks = [
       },
       {
         id: 'fiber',
-        title: 'Android Charging Fiber',
+        title: {
+          nl: 'Android Oplaadvezel',
+          eng: 'Android Charging Fiber'
+        },
         image: '/img/details/julia-white-full/fiber.jpg',
         description: {
           nl: "Android Charging Fibre is een speciaal materiaal dat wordt gebruikt voor het draadloos opladen van androids wanneer u onderweg bent. Dankzij de fotovoltaische eigenschappen kan het zonlicht opnemen en omzetten in bruikbare energie. Het houdt de drager ook koel tijdens de zomer. Overtollige energie wordt opgeslagen en kan worden gedoneerd aan het elektriciteitsnet van de stad.",
@@ -125,7 +146,10 @@ export const looks = [
       },
       {
         id: 'stockings',
-        title: 'Reflective Stockings',
+        title: {
+          nl: 'Reflecterende Kousen',
+          eng: 'Reflective Stockings'
+        },
         image: '/img/details/julia-white-full/stockings.jpg',
         description: {
           nl: 'Reflecterende kousen zorgen voor meer zichtbaarheid op de weg. Ze zijn perfect voor fietsers en gebruikers van ander draagbaar transport zoals zelfbalancerende hoverboards.',
@@ -134,7 +158,10 @@ export const looks = [
       },
       {
         id: 'shoes',
-        title: 'Extra Battery Storage',
+        title: {
+          nl: 'Extra Batterijopslag',
+          eng: 'Extra Battery Storage'
+        },
         image: '/img/details/julia-white-full/shoes.jpg',
         description: {
           nl: 'Deze schoenen beschikken over extra batterijopslag om overtollige zonne-energie te behouden. Ze kunnen ook worden gebruikt om androïden en mobiele apparaten op te laden.',
@@ -188,7 +215,10 @@ export const looks = [
     details: [
       {
         id: 'bracelet',
-        title: 'AR Display Bracelet',
+        title: {
+          nl: 'AR-Displayarmband',
+          eng: 'AR Display Bracelet'
+        },
         image: '/img/details/juliet-black-full/bracelet.jpg',
         description: {
           nl: 'Een armband met Augmented Reality Display kan fotos, videos en andere documenten projecteren. Handig tijdens zakelijke vergaderingen in open lucht of wanneer een projector niet beschikbaar is.',
@@ -197,7 +227,10 @@ export const looks = [
       },
       {
         id: 'glasses',
-        title: 'Smart Conference Glasses',
+        title: {
+          nl: 'Slimme Conferentiebril',
+          eng: 'Smart Conference Glasses'
+        },
         image: '/img/details/juliet-black-full/glasses.jpg',
         description: {
           nl: 'Smart Conference Glasses worden geleverd met ingebouwde software voor bedrijfscommunicatie, zodat de drager altijd een verbinding naar het kantoor heeft, zelfs als hij buiten zit. Dit stimuleert buitenactiviteit terwijl de gebruiker productief blijft.',
@@ -206,7 +239,10 @@ export const looks = [
       },
       {
         id: 'necklace',
-        title: 'USB Necklace',
+        title: {
+          nl: 'USB-Ketting',
+          eng: 'USB Necklace'
+        },
         image: '/img/details/juliet-black-full/necklace.jpg',
         description: {
           nl: 'De kleine kralen op deze ketting bevatten USB-opslag voor eenvoudig transport van zakelijke documenten. Een alternatieve versie is voorzien van kleine powerbanks voor het opladen in noodgevallen.',
@@ -215,7 +251,10 @@ export const looks = [
       },
       {
         id: 'photovoltaic-fiber',
-        title: 'Photovoltaic Fiber',
+        title: {
+          nl: 'Fotovoltaische Vezel',
+          eng: 'Photovoltaic Fiber'
+        },
         image: '/img/details/juliet-black-full/photovoltaic-fiber.jpg',
         description: {
           nl: 'Photovoltaic Fiber vangt zonne-energie op en kan worden gebruikt voor het opladen van mobiele apparaten en powerbanks. Overtollige energie kan worden gedoneerd aan het elektriciteitsnet van de stad.',
@@ -224,7 +263,10 @@ export const looks = [
       },
       {
         id: 'pants',
-        title: 'Size Adjustable Pants',
+        title: {
+          nl: 'In Grootte Verstelbare Broek',
+          eng: 'Size Adjustable Pants'
+        },
         image: '/img/details/juliet-black-full/pants.jpg',
         description: {
           nl: 'Aan grootte aanpasbare broeken kunnen groeien en krimpen afhankelijk van de voorkeur van de gebruiker. Maak ze lang op het werk en trek ze op tijdens een wandeling in het park. One size fits all.',
@@ -278,7 +320,10 @@ export const looks = [
     details: [
       {
         id: 'glasses',
-        title: 'High-End Smart Glasses',
+        title: {
+          nl: 'High-End Slimme Bril',
+          eng: 'High-End Smart Glasses'
+        },
         image: '/img/details/julia-black-full/glasses.jpg',
         description: {
           nl: 'High-End Smart Glasses zouden een mobiele telefoon kunnen vervangen door dezelfde functionaliteit te bieden, maar dan handsfree. Een camera aan de voorkant kan het zicht van de gebruiker in realtime delen, handig voor bloggers en journalisten. Ze hebben ook een duurzame constructie en kunnen worden aangepast met modulaire onderdelen, afhankelijk van de behoeften van de gebruiker.',
@@ -287,7 +332,10 @@ export const looks = [
       },
       {
         id: 'waistband',
-        title: 'Eco Battery Band',
+        title: {
+          nl: 'Eco Batterijband',
+          eng: 'Eco Battery Band'
+        },
         image: '/img/details/julia-black-full/waistband.jpg',
         description: {
           nl: 'Deze Eco Battery Band is gemaakt van 100% gerecyclede materialen. Intern bevat het een flexibele batterij die kan worden gebruikt om de Smart Glasses of een ander mobiel apparaat op te laden.',
@@ -296,7 +344,10 @@ export const looks = [
       },
       {
         id: 'skirt',
-        title: 'Lightweight Photovoltaic Fiber',
+        title: {
+          nl: 'Lichtgewicht Fotovoltaische Vezel',
+          eng: 'Lightweight Photovoltaic Fiber'
+        },
         image: '/img/details/julia-black-full/skirt.jpg',
         description: {
           nl: 'Een rok van lichtgewicht fotovoltaische vezels kan zonne-energie vangen. Het is licht genoeg voor elke fysieke activiteit, terwijl de interne magneten ervoor zorgen dat het tijdens winderige dagen of tijdens het fietsen niet in de lucht waait.',
@@ -305,7 +356,10 @@ export const looks = [
       },
       {
         id: 'shoes',
-        title: 'Kinetic Energy Shoes',
+        title: {
+          nl: 'Schoenen met Kinetische Energie',
+          eng: 'Kinetic Energy Shoes'
+        },
         image: '/img/details/julia-black-full/shoes.jpg',
         description: {
           nl: 'Deze schoenen vangen kinetische energie op tijdens het lopen. De energie kan draadloos in de batterijband worden opgeslagen of worden gebruikt om mobiele apparaten op te laden.',
@@ -354,7 +408,10 @@ export const looks = [
     details: [
       {
         id: 'fiber',
-        title: 'Heat Absorbing Fiber',
+        title: {
+          nl: 'Warmteabsorberende Vezel',
+          eng: 'Heat Absorbing Fiber'
+        },
         image: '/img/details/juliet-white-full/fiber.jpg',
         description: {
           nl: 'Warmte absorberende vezel kleding wordt gedragen tijdens fysiek intense activiteiten zoals hardlopen. Het absorbeert de lichaamswarmte en zet het om in bruikbare energie terwijl de drager koel blijft.',
@@ -363,7 +420,10 @@ export const looks = [
       },
       {
         id: 'watch',
-        title: 'AI Smart Watch',
+        title: {
+          nl: 'AI Smartwatch',
+          eng: 'AI Smart Watch'
+        },
         image: '/img/details/juliet-white-full/watch.jpg',
         description: {
           nl: 'Een Smart Watch met persoonlijke AI kan worden gebruikt om uw dagelijkse activiteiten te volgen en persoonlijke trainingsschemas op te stellen. Het houdt je ook gemotiveerd om te oefenen, rekening houdende met je drukke agenda.',
@@ -372,7 +432,10 @@ export const looks = [
       },
       {
         id: 'bag',
-        title: 'Recycled Ocean Bag',
+        title: {
+          nl: 'Gerecycleerde Oceaantas',
+          eng: 'Recycled Ocean Bag'
+        },
         image: '/img/details/juliet-white-full/bag.jpg',
         description: {
           nl: 'Deze tas is gemaakt van gerecycled plastic uit de oceaan. Het is een perfecte manier om afval te hergebruiken.',
@@ -381,7 +444,10 @@ export const looks = [
       },
       {
         id: 'shoes',
-        title: 'Kinetic Energy Saving Shoes',
+        title: {
+          nl: 'Schoenen die Kinetische Energie Opslaan',
+          eng: 'Kinetic Energy Saving Shoes'
+        },
         image: '/img/details/juliet-white-full/shoes.jpg',
         description: {
           nl: "Kinetic Energy Saving Shoes vangen de energie van de drager op tijdens het wandelen en slaan deze op in de ingebouwde batterijen. De schoenen hebben LED-verlichting die 's nachts de zichtbaarheid verbetert. Overmatige energie kan worden gebruikt om mobiele apparaten op te laden of kan worden gedoneerd aan het elektriciteitsnet van de stad.",
@@ -425,7 +491,10 @@ export const looks = [
     details: [
       {
         id: 'gloves',
-        title: 'Hair Styling Gloves',
+        title: {
+          nl: 'Handschoenen voor Haarstyling',
+          eng: 'Hair Styling Gloves'
+        },
         image: '/img/details/remy-black-full/gloves.jpg',
         description: {
           nl: 'Hair Styling Gloves gebruiken een mix van groene elektrostatische energie en natuurlijke haargel om de gebruiker snel een nieuw kapsel te geven.',
@@ -434,7 +503,10 @@ export const looks = [
       },
       {
         id: 'photovoltaic-mesh',
-        title: 'Photovoltaic Mesh',
+        title: {
+          nl: 'Fotovoltaisch Gaas',
+          eng: 'Photovoltaic Mesh'
+        },
         image: '/img/details/remy-black-full/photovoltaic-mesh.jpg',
         description: {
           nl: 'Het fotovoltaische maas oogst zonne-energie en gebruikt het om mobiele apparaten en powerbanks op te laden. Vanwege zijn lichte aard laat hij ook voldoende lucht binnen om het lichaam te koelen.',
@@ -443,7 +515,10 @@ export const looks = [
       },
       {
         id: 'bracelet',
-        title: 'Wireless Battery',
+        title: {
+          nl: 'Draadloze Batterij',
+          eng: 'Wireless Battery'
+        },
         image: '/img/details/remy-black-full/bracelet.jpg',
         description: {
           nl: 'Deze armband heeft een ingebouwde batterij voor het opladen van mobiele apparaten. Dankzij de draadloze oplaadtechnologie kunnen apparaten tot 5 meter van de armband worden opgeladen.',
